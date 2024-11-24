@@ -1,0 +1,67 @@
+/* dashboard.css */
+
+.dashboard {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .features-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .features-table th,
+  .features-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .features-table th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .status-active {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-inactive {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .toggle-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .toggle-button.enable {
+    background-color: green;
+  }
+  
+  .toggle-button.disable {
+    background-color: red;
+  }
+  
+  .toggle-button:hover {
+    opacity: 0.8;
+  }
+  

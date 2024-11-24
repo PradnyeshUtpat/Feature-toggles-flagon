@@ -1,0 +1,142 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent vertical scrolling */
+    font-family: 'Fira Code', monospace; /* Coding-like font */
+    background-color: #121212;
+    color: #e8e8e8;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(28, 31, 58, 0.9); /* Dark background with some transparency */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    padding: 1.5rem 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 10px; /* Rounded edges */
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #39a9db;
+    letter-spacing: 1px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #e8e8e8;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #39a9db;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px rgba(57, 169, 219, 0.8); /* Glow effect */
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(35, 35, 35, 0.7); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-top: 3rem; /* Adding space from the navbar */
+    flex-grow: 1; /* Allow the hero section to take up available space */
+  }
+  
+  .hero-section h2 {
+    font-size: 3rem;
+    color: #39a9db;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #e8e8e8;
+    margin-top: 1rem;
+  }
+  
+  /* Feature Overview Section */
+  .feature-overview {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background-color: rgba(28, 31, 58, 0.8); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-top: 3rem;
+    flex-grow: 1;
+  }
+  
+  .feature-card {
+    text-align: center;
+    background-color: rgba(42, 45, 73, 0.8); /* Slight transparency for glassmorphism */
+    padding: 2rem;
+    border-radius: 12px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.3rem;
+    color: #39a9db;
+    margin-top: 1rem;
+  }
+  
+  .feature-card p {
+    color: #e8e8e8;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .feature-card svg {
+    color: #39a9db;
+    margin-bottom: 1rem;
+  }
+  
+  /* General Section Styling */
+  h2 {
+    text-align: center;
+    color: #39a9db;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+  
+
+  

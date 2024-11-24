@@ -1,0 +1,138 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Fira Code', monospace; /* Coding-like font */
+    background-color: #121212;
+    color: #e8e8e8;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+/* Page2 Background Styling */
+.page2-bg {
+    background: linear-gradient(to right, #2b5876, #4e4376); /* Gradient background */
+    height: 100%;
+    padding: 2rem;
+}
+
+/* Page2 Container Styling */
+.page2-container {
+    background-color: rgba(28, 31, 58, 0.9); /* Darker container with transparency */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    max-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 2rem; /* Space for footer if needed */
+    position: relative;
+    scrollbar-width: thin;
+    scrollbar-color: #39a9db #1e1e1e; /* Set thumb and track colors */
+}
+.page2-container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  .page2-container::-webkit-scrollbar-thumb {
+    background-color: #39a9db; /* Color of the scroll thumb */
+    border-radius: 10px;
+    border: 2px solid #1e1e1e; /* Dark border for thumb */
+  }
+  
+  .page2-container::-webkit-scrollbar-thumb:hover {
+    background-color: #1c8ba0; /* Darker color when hovering over the thumb */
+  }
+  
+  .page2-container::-webkit-scrollbar-track {
+    background-color: #1e1e1e; /* Dark color for the track */
+    border-radius: 10px;
+  }
+  
+  /* Optionally, for a more modern look, add a transition to the thumb */
+  .page2-container::-webkit-scrollbar-thumb {
+    transition: background-color 0.3s ease;
+  }
+/* Back Button */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #39a9db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.back-button:hover {
+    background-color: #1c8ba0;
+}
+
+/* Header Section */
+.page2-header h2 {
+    color: #39a9db;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.page2-header p {
+    color: #e8e8e8;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Content Section Styling */
+.content-section {
+    margin-top: 2rem;
+}
+
+.content-section h3 {
+    color: #39a9db;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    color: #e8e8e8;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Code Block Styling */
+.code-block {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #39a9db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #1c8ba0;
+}
+
+
